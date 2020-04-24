@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Asegurate Global</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+</head>
+<body>
+<!-- menu -->
+<section style="position: relative;">
+	<div class="container menu px-sm-0 px-xl-4">
+		<div class="logo_menu">
+			<a href="">
+				<img src="assets/img/Mesa-de-trabajo-3.png" width="100%" height="100%">
+			</a>
+		</div>
+		<div class="icono_menu">
+			<div class="lineas_menu"></div>
+			<div class="lineas_menu"></div>
+			<div class="lineas_menu"></div>
+			<i class="fas fa-times"></i>
+		</div>
+		<div class="list_menu">
+			<ul style="list-style-type:none">
+				<li>
+					<a href="">Inicio</a>
+					<div class="linea"></div>
+				</li>
+				<li>
+					<a href="">Blog</a>
+					<div class="linea"></div>
+				</li>
+				<li>
+					<a href="">Contacto</a>
+					<div class="linea"></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="menu_celular">
+		<div class="px-4 px-sm-5 submenu">
+			<div>
+				<a href="">Inicio</a>
+			</div>
+			<div class="linea_menu"></div>
+			<div>
+				<a href="">Blog</a>
+			</div>
+			<div class="linea_menu"></div>
+			<div>
+				<a href="">Contactos</a>
+			</div>
+			<div class="linea_menu"></div>
+		</div>
+	</div>
+</section>
+<!-- fin de menu -->
+<section>
+	<div class="container px-xl-5 mt-5">
+		<div class="row m-0 justify-content-center">
+			<div class="col-12 px-md-5">
+				<h1 class="text-center color_iguales"><b>¡Contáctenos ahora!</b></h1>
+				<p class="color_iguales mt-5">Si aún tiene dudas sobre nuestro servicio, escríbenos y un asesor se pondrá en contacto en las  próximas 24 horas para ayudarte con todo el proceso y despejar todas tus dudas.</p>
+			</div>
+			<div class="col-12 px-0 px-md-2 px-lg-3 px-xl-5 my-5">
+				<form class="px-md-5">
+					<div class="row m-0 justify-content-center">
+						<div class="col-sm-6 mb-4 pr-sm-3">
+							<p class="mb-1 color_iguales subtitulos_contacto">Nombre</p>
+							<input type="text" class="input_contacto w-100">
+						</div>
+						<div class="col-sm-6 mb-4 pl-sm-3">
+							<p class="mb-1 color_iguales subtitulos_contacto">Apellidos</p>
+							<input type="text" class="input_contacto w-100">
+						</div>
+						<div class="col-sm-6 mb-4 pr-sm-3">
+							<p class="mb-1 color_iguales subtitulos_contacto">Correo</p>
+							<input type="text" class="input_contacto w-100">
+						</div>
+						<div class="col-sm-6 mb-4 pl-sm-3">
+							<p class="mb-1 color_iguales subtitulos_contacto">Número de teléfono</p>
+							<input type="text" class="input_contacto w-100">
+						</div>
+						<div class="col-sm-6 mb-4 pr-sm-3">
+							<p class="mb-1 color_iguales subtitulos_contacto">País/región</p>
+							<input type="text" class="input_contacto w-100">
+						</div>
+						<div class="col-sm-6 mb-4 pl-sm-3">
+							<p class="mb-1 color_iguales subtitulos_contacto">Asunto</p>
+							<input type="text" class="input_contacto w-100">
+						</div>
+						<div class="col-12 mb-4">
+							<p class="mb-1 color_iguales subtitulos_contacto">Motivo</p>
+							<textarea name="textarea"  class="input_contacto w-100 textarea_contac py-2"></textarea>
+						</div>
+						<div class="col-8 col-sm-4 my-4">
+							<button class="btn_enviar_contacto ">Enviar</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- iniciando el footer -->
+<footer>
+	<div class="container container_footer">
+		<div class="icono_sociales mr-1">
+			<a href="" class="btn px-0 py-1">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+		</div>
+		<div class="icono_sociales ml-1">
+			<a href="" class="btn px-0 py-1">
+				<i class="fab fa-linkedin"></i>
+			</a>
+		</div>
+	</div>
+</footer>
+<!-- fin del footer -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+	var estado="inicial"
+		$('.icono_menu').click(function(){
+			 if(estado=="inicial"){
+			 	$('.menu_celular').css('display','block');
+			 	$('.lineas_menu').css('display', 'none');
+			 	$('.fas').css('display','block');
+			 	 estado="click";
+			 }else
+			 {
+			 	$('.menu_celular').css('display','none');
+			 	$('.lineas_menu').css('display', 'block');
+			 	$('.fas').css('display','none');
+			 	 estado="inicial";
+			 }
+		});
+</script>
+</body>
+</html>

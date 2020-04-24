@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Asegurate Global</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+</head>
+<body>
+<!-- menu -->
+<section style="position: relative;">
+	<div class="container menu px-sm-0 px-xl-4">
+		<div class="logo_menu">
+			<a href="">
+				<img src="assets/img/Mesa-de-trabajo-3.png" width="100%" height="100%">
+			</a>
+		</div>
+		<div class="icono_menu">
+			<div class="lineas_menu"></div>
+			<div class="lineas_menu"></div>
+			<div class="lineas_menu"></div>
+			<i class="fas fa-times"></i>
+		</div>
+		<div class="list_menu">
+			<ul style="list-style-type:none">
+				<li>
+					<a href="">Inicio</a>
+					<div class="linea"></div>
+				</li>
+				<li>
+					<a href="">Blog</a>
+					<div class="linea"></div>
+				</li>
+				<li>
+					<a href="">Contacto</a>
+					<div class="linea"></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="menu_celular">
+		<div class="px-4 px-sm-5 submenu">
+			<div>
+				<a href="">Inicio</a>
+			</div>
+			<div class="linea_menu"></div>
+			<div>
+				<a href="">Blog</a>
+			</div>
+			<div class="linea_menu"></div>
+			<div>
+				<a href="">Contactos</a>
+			</div>
+			<div class="linea_menu"></div>
+		</div>
+	</div>
+</section>
+<!-- fin de menu -->
+<section>
+	<div class="container my-5 blog_detalle px-md-5">
+		<h1 class="text-center color_iguales mb-5"><b>¿Por qué contratar un seguro de enfermedades críticas?</b></h1>
+		<div class="img_blog_detalle mb-5">
+			<img src="assets/img/3522911-1024x682.jpg">
+		</div>
+		<div class="descripcion_blog_detalle">
+			<p>
+				Hay personas que antes de un viaje realizan un check list en el que incluyen ropa, zapatos, accesorios, implementos de aseo, etc., pero muy pocos incluyen en esa lista un botiquín.
+                Recuerda, salir de vacaciones implica que estarás lejos de casa, fuera de la zona de confort y es importante prever cualquier situación para actuar a tiempo, por eso hoy te queremos contar algunas de las enfermedades más comunes que se pueden presentar en este verano:
+			</p>
+			<h5><b>Enfermedades gastrointestinales</b></h5>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+</section>
+<!-- iniciando el footer -->
+<footer>
+	<div class="container container_footer">
+		<div class="icono_sociales mr-1">
+			<a href="" class="btn px-0 py-1">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+		</div>
+		<div class="icono_sociales ml-1">
+			<a href="" class="btn px-0 py-1">
+				<i class="fab fa-linkedin"></i>
+			</a>
+		</div>
+	</div>
+</footer>
+<!-- fin del footer -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+	var estado="inicial"
+		$('.icono_menu').click(function(){
+			 if(estado=="inicial"){
+			 	$('.menu_celular').css('display','block');
+			 	$('.lineas_menu').css('display', 'none');
+			 	$('.fas').css('display','block');
+			 	 estado="click";
+			 }else
+			 {
+			 	$('.menu_celular').css('display','none');
+			 	$('.lineas_menu').css('display', 'block');
+			 	$('.fas').css('display','none');
+			 	 estado="inicial";
+			 }
+		});
+</script>
+</body>
+</html>
